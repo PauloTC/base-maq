@@ -1,23 +1,22 @@
+
 // @import 'utils/normalize'
 // @import 'nib'
 
-// Import fonts
+// // Import fonts
 // @import 'utils/fonts'
 // @import 'utils/ico'
 
-// Import config
+// // Import config
 // @import 'config/identity'
 // General
 .wancho
-	width 94%
+	width 96%
 	max-width 1024px
 	margin auto
 body
 	font-size 15px
 	font-family t-0
 	color c-0
-	-webkit-font-smoothing antialiased
-	-webkit-tap-highlight-color transparent
 a
 	color inherit
 	&:focus
@@ -40,7 +39,14 @@ a
 		vertical-align top
 .no-style
 	line-height 1.4
-
+.clearfix
+	&:after
+		content ""
+		clear both
+		height 0
+		visibility hidden
+		display block
+		font-size 0
 .g-text
 	p
 		margin-bottom 0
@@ -53,6 +59,5 @@ a
 // @import 'blocks/*'
 
 
-// Import animations
+// // Import animations
 // @import 'utils/animation'
-
